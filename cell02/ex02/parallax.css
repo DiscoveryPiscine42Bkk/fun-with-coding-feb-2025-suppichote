@@ -34,13 +34,12 @@ body {
 }
 
 #img1 {
-    background-image: url("https://cdn.mos.cms.futurecdn.net/KgJ2GoxKFrnKo3pChxvJxN.jpg");
+    background-image: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8");
     min-height: 100vh;
     color: white;
 }
 
 #img2 {
-    background-image: url("https://a.storyblok.com/f/178900/920x518/fb8850f0cf/bocchi-the-rock.jpg/m/filters:quality(95)format(webp)");
+    background-image: url("https://images.unsplash.com/photo-1521747116042-5a810fda9664");
     min-height: 70vh;
-
 }

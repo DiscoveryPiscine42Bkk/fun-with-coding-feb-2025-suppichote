@@ -1,11 +1,45 @@
-table {
-    border-collapse: collapse;
-    width: 100%;
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Full-page setup */
+body, html {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Full-screen table */
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Cells */
 td {
-    padding-block: 64px;
-    text-align: left;
-    border: 1px solid black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 50px;
+    border-collapse: collapse;
     width: 50%;
 }
+
+/* Background Colors */
+.first {
+    background-color: aqua;
+}
+
+.second {
+    background-color: blueviolet;
+}
+
+

@@ -5,37 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile Card</title>
-    
-    <!-- Link to External CSS -->
     <link rel="stylesheet" href="card.css">
-    
-    <!-- Link to FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <div class="cards">
-        <div class="container">
-            <h2 class="title">User Profile Card</h2>
-            
-            <div class="card">
-                <!-- Change the Profile Image Here -->
-                <img src="a.jpg" alt="Avatar" width="250" height="250">
-                
-                <div class="desc">
-                    <h2>skorasku</h2>
-                    <p class="level">Level 12, The Answer</p>
-                    <p>42Paris</p>
-                    
-                    <!-- Social Media Icons -->
-                    <div class="social-icons">
+    <div class="profile-container">
+        <h2 class="title">User Profile Card</h2>
+
+        <div class="profile-card">
+            <table>
+                <!-- Profile Picture Row -->
+                <tr>
+                    <td class="profile-image">
+                        <img src="a.jpg" alt="Profile Picture">
+                    </td>
+                </tr>
+
+                <!-- User Info Row -->
+                <tr>
+                    <td class="profile-info">
+                        <h3>skorasku</h3>
+                        <p class="description">Level 8, The Answer</p>
+                        <p>42Paris</p>
+                    </td>
+                </tr>
+
+                <!-- Social Media Links -->
+                <tr>
+                    <td class="social-icons">
                         <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                </div>
+                    </td>
+                </tr>
 
                 <!-- Contact Button -->
-                <a class="footer" href="https://github.com/DiscoveryPiscine42Bkk" target="_blank">Contact</a>
-            </div>
+                <tr>
+                    <td class="contact-cell">
+                        <a class="contact-btn" href="https://github.com/DiscoveryPiscine42Bkk/fun-with-coding-feb-2025-suppichote/tree/main/" target="_blank">Contact</a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

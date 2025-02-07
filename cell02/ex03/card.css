@@ -1,0 +1,91 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center the profile card */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Profile Card Container */
+.profile-container {
+    text-align: center;
+}
+
+/* Profile Card Table */
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 350px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Profile Image */
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+/* User Info */
+.profile-info h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+/* Description */
+.description {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Social Icons */
+.social-icons {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-link {
+    margin: 5px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Contact Button */
+.contact-cell {
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #0070f3;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-btn:hover {
+    background-color: #0051c8;
+}

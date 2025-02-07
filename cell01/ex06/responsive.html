@@ -4,33 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab</title>
+    <title>Full-Page Table</title>
 </head>
-<style>
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
 
-    td {
-        padding-block: 64px;
-        text-align: left;
-        border: 1px solid rgb(160, 25, 25);
-        width: 50%;
-    }
-</style>
+<body style="margin: 0; height: 100vh; 
+display: flex; 
+justify-content: center; 
+align-items: center;">
 
-<body>
-    <table>
-        <tr>
-            <td style="background-color: rgb(166, 255, 0);">
-                <div>First cell</div>
+    <table width="100%" height="100%"  style="border-collapse: collapse;">
+        <tr height="100%">
+            <td width="50%" 
+            bgcolor="rgb(166, 255, 0)" 
+            >
+                <div>First Cell</div>
             </td>
-            <td style="background-color:blueviolet;">
-                <div>Second cell</div>
+            <td width="50%" 
+            bgcolor="blueviolet" 
+            >
+                <div>Second Cell</div>
             </td>
         </tr>
     </table>
+
 </body>
 
 </html>

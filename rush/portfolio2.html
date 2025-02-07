@@ -1,0 +1,189 @@
+<!-- Portfolio Page Template (portfolio1.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for character encoding and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Linking Bootstrap for easy and responsive design -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for styling the page -->
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style for readability */
+            background-color: #f4f4f9; /* Light background color for a clean look */
+            color: #333; /* Text color for good contrast */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles for navigation */
+        header {
+            background-color: #4a4e69; /* Dark purple background */
+            color: white;
+            padding: 1rem 0; /* Space inside the header */
+            position: fixed; /* Keeps the header fixed at the top */
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensures header stays on top of other elements */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+
+        /* Navigation link styles */
+        header a {
+            color: white;
+            margin: 0 1.5rem;
+            text-decoration: none; /* Removes underline */
+            font-weight: bold;
+        }
+
+        /* Hover effect for navigation links */
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section padding for spacing */
+        section {
+            padding: 120px 20px 60px; /* Extra padding on top to avoid overlap with fixed header */
+        }
+
+        /* Styling for profile image */
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image fits well inside the circle */
+            border: 4px solid #4a4e69; /* Adds a border matching the header */
+        }
+
+        /* Paragraph styling inside About section */
+        #about p {
+            font-size: 1.1rem;
+            max-width: 600px; /* Limits the width for better readability */
+            margin: 1rem auto;
+        }
+
+        /* Card styling inside Showcase section */
+        #showcase .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for card depth */
+            transition: transform 0.3s ease; /* Smooth animation on hover */
+        }
+
+        /* Hover effect for cards */
+        #showcase .card:hover {
+            transform: translateY(-10px); /* Moves card up slightly on hover */
+        }
+
+        /* Card title styling */
+        #showcase .card-title {
+            color: #4a4e69; /* Matches the theme color */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #4a4e69;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Ensures footer text has no extra margins */
+        footer p {
+            margin: 0;
+        }
+
+        /* Styling for contact links */
+        .contact-links a {
+            color: #4a4e69;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        /* Hover effect for contact links */
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar for navigating to different sections -->
+    <header class="d-flex justify-content-center">
+        <nav>
+            <a href="index.html">Home</a> <!-- Link to the main page -->
+            <a href="#about">About</a> <!-- Scroll to the About section -->
+            <a href="#showcase">Showcase</a> <!-- Scroll to the Showcase section -->
+            <a href="#contact">Contact</a> <!-- Scroll to the Contact section -->
+        </nav>
+    </header>
+
+    <!-- About Section with Profile Picture -->
+    <section id="about" class="text-center">
+        <h1>About Me</h1>
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb" alt="Profile Picture">
+        <p>A passionate programmer always learning.</p>
+    </section>
+
+    <!-- Showcase Section with Project Images -->
+    <section id="showcase">
+        <h2 class="text-center">My Work</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Project 1 Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">KMITL Research</h5>
+                            <p class="card-text">KMITL Research Project: AI-powered drone automation.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">42BKK Coding Challenge</h5>
+                            <p class="card-text">42BKK Challenge: Building scalable web applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">VS Code Setup</h5>
+                            <p class="card-text">VS Code Setup: Custom workflows for efficient coding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section with social media links -->
+    <section id="contact" class="text-center">
+        <h2>Contact Me</h2>
+        <p>Hi contact contact contact</p>
+        <div class="contact-links">
+            <a href="https://github.com/DiscoveryPiscine42Bkk/fun-with-coding-feb-2025-ppholtha" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer with copyright info -->
+    <footer>
+        <p>&copy; skorsaku 2025</p>
+    </footer>
+
+    <!-- Bootstrap JS for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
